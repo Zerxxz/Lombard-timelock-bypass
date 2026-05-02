@@ -1,0 +1,12 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib", "node_modules"]
+test = "test"
+solc = "0.8.24"
+via_ir = false
+
+fs_permissions = [{ access = "read", path = "/tmp/evm-smart-contracts/contracts" }]
+
+[rpc_endpoints]
+mainnet = "${MAINNET_RPC_URL}"
